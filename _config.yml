@@ -30,7 +30,7 @@ url: "https://milanakostic.github.io" # the base hostname & protocol for your si
 github_username:  milanakostic
 
 # Build settings
-theme: minima
+theme: academic-jekyll-theme
 plugins:
   - jekyll-feed
 
