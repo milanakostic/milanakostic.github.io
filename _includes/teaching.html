@@ -1,0 +1,25 @@
+{% if site.data.teaching.institutions and site.data.teaching.institutions.size > 0 %}
+  {% for institution in site.data.teaching.institutions %}
+    <div class="teaching-group">
+      <h3>{{ institution.name }}</h3>
+      <ul class="teaching-list">
+        {% for course in institution.courses %}
+          <li>
+            <span class="course-title">{{ course.code }}: {{ course.title }}</span>
+            <span class="course-details">{% if course.instructor != "" %}{{ course.instructor }} · {% endif %}{{ course.term }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+  <div class="teaching-group">
+    <h3>Additional teaching experience</h3>
+    <ul class="teaching-list">
+      {% for experience in site.data.teaching.additional %}
+        <li><span class="course-title">{{ experience.role }}</span><span class="course-details">{{ experience.institution }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% else %}
+  <p class="quiet">Teaching information will be added soon.</p>
+{% endif %}

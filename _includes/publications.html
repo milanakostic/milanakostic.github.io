@@ -1,0 +1,14 @@
+{% assign publication_groups = site.data.publications | group_by: "type" %}
+{% for group in publication_groups %}
+  <div class="publication-group">
+    <h3>{{ group.name }}</h3>
+    <ul class="publication-list">
+      {% for publication in group.items %}
+        <li>
+          {% if publication.url %}<a href="{{ publication.url }}">{{ publication.title }}</a>{% else %}<span class="publication-title">{{ publication.title }}</span>{% endif %}
+          {% if publication.details %}<span class="publication-details">{{ publication.details }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <h1 id="hero-title">Milana Kostić</h1>
+    <div class="hero-copy">
+      {{ content }}
+    </div>
+  </div>
+  <figure class="profile-photo">
+    <img src="{{ site.profile_image | relative_url }}" alt="Portrait of Milana Kostić">
+  </figure>
+</section>
+
+<section class="content-section publications-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-content">
+    <h2 id="publications-title">Publications</h2>
+    {% include publications.html %}
+  </div>
+</section>
+
+<section class="content-section teaching-section" id="teaching" aria-labelledby="teaching-title">
+  <div class="section-content">
+    <h2 id="teaching-title">Teaching</h2>
+    {% include teaching.html %}
+  </div>
+</section>

@@ -1,0 +1,182 @@
+---
+---
+
+:root {
+  --ink: #202124;
+  --muted: #5f6368;
+  --line: #e2e4e7;
+  --paper: #fff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.65 "DM Sans", Arial, sans-serif;
+}
+
+a { color: inherit; text-underline-offset: .18em; }
+
+.site-shell {
+  width: min(820px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header {
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.site-header--home { justify-content: flex-end; }
+
+.wordmark {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--muted);
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+.site-footer a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+h1,
+h2,
+.publication-title,
+.publication-list a {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+}
+
+h1,
+h2 { letter-spacing: -.025em; }
+
+h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.3rem, 6vw, 3.5rem);
+  line-height: 1.05;
+}
+
+h2 {
+  margin: 0 0 17px;
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 58px 0 50px;
+}
+
+.hero > div { flex: 1 1 auto; }
+.hero-copy { max-width: 610px; }
+.hero-copy p { margin: 0 0 16px; }
+.hero-copy p:last-child { margin-bottom: 0; }
+
+.profile-photo {
+  flex: 0 0 220px;
+  height: 340px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-section {
+  border-top: 1px solid var(--line);
+  padding: 38px 0 42px;
+}
+
+.section-content,
+.page-content { max-width: 690px; }
+
+.quiet,
+.publication-details,
+.course-details,
+.eyebrow { color: var(--muted); }
+
+.quiet { font-size: .95rem; }
+
+.publication-group + .publication-group,
+.teaching-group + .teaching-group { margin-top: 30px; }
+
+.publication-group h3,
+.teaching-group h3 {
+  margin: 0 0 10px;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.publication-list,
+.teaching-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publication-list li { margin-bottom: 13px; }
+.teaching-list li + li { margin-top: 15px; }
+
+.publication-title,
+.publication-list a { font-size: 1.15rem; }
+
+.publication-details,
+.course-title,
+.course-details { display: block; }
+
+.publication-details,
+.course-details { font-size: .92rem; }
+.course-title { font-weight: 500; }
+
+.site-footer {
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+  padding: 22px 0 32px;
+  color: var(--muted);
+  font-size: .82rem;
+}
+
+.page-content { padding: 65px 0 80px; }
+.eyebrow { margin: 0 0 7px; font-size: .8rem; }
+.page-content h1 { margin-bottom: 22px; font-size: 2.6rem; }
+.page-content p { margin: 0 0 18px; }
+
+@media (max-width: 640px) {
+  .site-shell { width: min(100% - 32px, 820px); }
+  nav { gap: 16px; }
+  .hero { gap: 24px; padding: 42px 0 38px; }
+  .profile-photo { flex-basis: 130px; height: 195px; }
+  .content-section { padding: 32px 0 36px; }
+}

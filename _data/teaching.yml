@@ -1,0 +1,48 @@
+institutions:
+  - name: USC Philosophy Department
+    courses:
+      - code: PHIL 168
+        title: Meaning of Life
+        instructor: Merrick Anderson
+        term: Spring 2026
+      - code: PHIL 176
+        title: Introduction to Feminist Philosophy
+        instructor: Emily Tilton
+        term: Fall 2025
+      - code: PHIL 220
+        title: Introduction to Logic
+        instructor: Gabriel Uzquiano
+        term: Spring 2024
+      - code: PHIL 108
+        title: "Philosophy, Politics, and Economics in Europe, from Renaissance to Enlightenment (1375–1800)"
+        instructor: Jacob Soll
+        term: Fall 2023
+  - name: UC San Diego Sixth College Culture, Art, and Technology Writing Program
+    courses:
+      - code: CAT 1
+        title: The Transformation of Cities (history course)
+        instructor: ""
+        term: Fall 2020
+      - code: CAT 2
+        title: Cities and States (anthropology course)
+        instructor: ""
+        term: Winter 2021
+      - code: CAT 3
+        title: "Representation and Rights: Disability in History and the Arts"
+        instructor: ""
+        term: Spring 2021
+      - code: CAT 125
+        title: Public Rhetoric
+        instructor: ""
+        term: Fall 2021
+      - code: CAT 2
+        title: Media-Made America — America's Small-Screen Geographies (communication studies course)
+        instructor: ""
+        term: Winter 2022
+      - code: CAT 3
+        title: "Our Future Climate: Envisioning Our Collective Future"
+        instructor: ""
+        term: Spring 2022
+additional:
+  - role: Teaching Assistant
+    institution: UC San Diego Summer Program for Advancement of Women in Philosophy
