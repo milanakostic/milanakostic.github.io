@@ -1,10 +1,10 @@
 # Add or edit publications here. The homepage reads this file automatically.
-- type: Book
+- type: Edited Volume
   title: "Structural Injustice in Philosophy"
   url: "https://www.bloomsbury.com/us/structural-injustice-in-philosophy-9781350521797/"
   details: "Co-edited with Maeve McKeown and Seunghyun Song. London: Bloomsbury Academic, forthcoming."
 
-- type: Articles
+- type: Article
   title: "On the Utility of Research into Geoengineering Technologies for Risk-avoidant Agents"
   url: "https://www.cambridge.org/core/journals/philosophy-of-science/article/on-the-utility-of-research-into-geoengineering-technologies-for-riskavoidant-agents/1224223F3CD1584944573D8AF56D25CC"
   details: "Philosophy of Science 90(5), 2023."
