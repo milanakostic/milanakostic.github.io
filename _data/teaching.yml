@@ -20,7 +20,7 @@ institutions:
   - name: UC San Diego Sixth College Culture, Art, and Technology Writing Program
     courses:
       - code: CAT 3
-        title: Our Future Climate: Envisioning Our Collective Future
+        title: "Our Future Climate: Envisioning Our Collective Future"
         instructor: Adam Burgasser
         term: Spring 2022
       - code: CAT 2
@@ -32,7 +32,7 @@ institutions:
         instructor: Joe Bigham
         term: Fall 2021
       - code: CAT 3
-        title: Representation and Rights: Disability in History and the Arts
+        title: "Representation and Rights: Disability in History and the Arts"
         instructor: Matthew Herbst and Lisa Porter
         term: Spring 2021
       - code: CAT 2
