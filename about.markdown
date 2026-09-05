@@ -2,17 +2,11 @@
 layout: page
 title: About
 permalink: /about/
+description: Learn about Milana Kostić, a PhD candidate in Philosophy at the University of Southern California.
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Milana Kostić is a PhD candidate in Philosophy at the University of Southern California, advised by Andrew Bacon.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Her research focuses on epistemology, philosophy of language, philosophical logic, decision theory, and feminist philosophy. Before USC, she studied logic and philosophy of science at the Munich Center for Mathematical Philosophy, and philosophy at UC San Diego and the University of Belgrade.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+For publications, teaching, and service, visit the [home page]({{ '/' | relative_url }}).
