@@ -16,9 +16,14 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: 16px/1.65 "DM Sans", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
-a { color: inherit; text-underline-offset: .18em; }
+a {
+  color: inherit;
+  overflow-wrap: anywhere;
+  text-underline-offset: .18em;
+}
 
 .site-shell {
   width: min(820px, calc(100% - 48px));
@@ -175,7 +180,31 @@ h2 {
 
 @media (max-width: 640px) {
   .site-shell { width: min(100% - 32px, 820px); }
-  nav { gap: 16px; }
-  .hero { padding: 42px 0 38px; gap: 24px; }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 42px 0 38px;
+  }
+  .profile-photo {
+    aspect-ratio: 4 / 5;
+    max-width: 360px;
+  }
   .content-section { padding: 32px 0 36px; }
+}
+
+@media (max-width: 440px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .site-header--home { align-items: flex-end; }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+
+  .page-content { padding: 45px 0 60px; }
 }
